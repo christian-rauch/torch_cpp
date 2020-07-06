@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>torch_cpp</name>
+  <version>1.5.1</version>
+  <description>torch C++ library</description>
+
+  <maintainer email="Christian.Rauch@ed.ac.uk">Christian Rauch</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
