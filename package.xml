@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>torch_cpp</name>
-  <version>1.9.1</version>
+  <version>1.10.0</version>
   <description>torch C++ library</description>
 
   <maintainer email="Christian.Rauch@ed.ac.uk">Christian Rauch</maintainer>
