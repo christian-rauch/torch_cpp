@@ -19,3 +19,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC torch)
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 14)
 target_link_options(${PROJECT_NAME} PUBLIC ${TORCH_CXX_FLAGS})
 ```
+
+If you get the error `No CMAKE_CUDA_COMPILER could be found.`, then the CUDA compiler `nvcc` cannot be found in the default search paths (`$PATH`). In this case, you have to set the path to `nvcc` manually:
+```sh
+export CUDACXX=/usr/local/cuda/bin/nvcc
+```
