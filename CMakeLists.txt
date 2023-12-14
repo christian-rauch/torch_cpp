@@ -19,9 +19,6 @@ ExternalProject_Get_Property(torch_archive SOURCE_DIR)
 set(TORCH_PATH ${SOURCE_DIR})
 
 
-add_library(${PROJECT_NAME} SHARED IMPORTED)
-add_dependencies(${PROJECT_NAME} torch_ext_archive)
-
 # manually install header, libraries and config files
 
 include(GNUInstallDirs)
