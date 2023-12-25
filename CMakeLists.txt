@@ -21,17 +21,15 @@ set(TORCH_PATH ${SOURCE_DIR})
 
 # manually install header, libraries and config files
 
-include(GNUInstallDirs)
-
 install(DIRECTORY ${TORCH_PATH}/include/
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    DESTINATION include
     FILES_MATCHING PATTERN "*.h*"
 )
 
 install(DIRECTORY ${TORCH_PATH}/lib/
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    DESTINATION lib
 )
 
 install(DIRECTORY ${TORCH_PATH}/share/
-    DESTINATION ${CMAKE_INSTALL_DATADIR}
+    DESTINATION share
 )
